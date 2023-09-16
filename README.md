@@ -37,8 +37,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://your-solution-url.com)
-- Live Site URL: (https://your-live-site-url.com)
+- Solution URL: (https://github.com/Praixx/ping-coming-soon-page-master)
+- Live Site URL: (https://elegant-liger-030187.netlify.app/)
 
 ## My process
 
