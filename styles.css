@@ -1,0 +1,252 @@
+/******** BASIC RESET ********/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, p, ul, li{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav ul, nav ol, li{
+    list-style: none;
+
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+:root{
+    --Pale-Blue: hsl(224, 48%, 94%);
+    --Pale-Bluee: hsl(223, 100%, 88%);
+    --Light-Red: hsl(354, 100%, 66%);
+    --Gray: hsl(0, 0%, 59%);
+    --Very-Dark-Blue: hsl(209, 33%, 12%);
+    --Blue: hsl(228, 45%, 44%);
+}
+
+/********** TYPOGRAPHY *********/
+
+body{
+    background-color: var(--Pale-Blue);
+    font-family: 'Libre Franklin', sans-serif;
+    text-align: center;
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 20px;
+}
+
+form, input, button{
+    font-family: inherit;
+}
+
+/****** PAGE SECTION *******/
+
+#page{
+    max-width: 1500px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+/***** HEADER SECTION *******/
+
+header{
+    padding-bottom: 30px;
+}
+
+/***** MAIN SECTION *******/
+
+main{
+    padding: 10px auto;
+}
+
+main h1{
+    color: var(--Very-Dark-Blue);
+    padding-bottom: 10px;
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+
+main span{
+    color: var(--Gray);
+}
+
+main h3{
+    color: var(--Very-Dark-Blue);
+    font-weight: 600;
+    font-size: 1.3rem;
+    padding-bottom: 30px;
+}
+
+/****** FORM SECTION *******/
+
+form{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px;
+}
+
+form input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 30px;
+    border: 2px solid var(--Pale-Bluee);
+    outline: none;
+    
+}
+
+form input:focus{
+    border: 2px solid var(--Very-Dark-Blue);
+}
+
+label{
+    grid-row: 2;
+    display: none;
+}
+
+form label p{
+    font-size: 14px;
+    padding: 3px 0px 30px 0px;
+    color: var(--Light-Red);
+    font-weight: 300;
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #fff;
+    background-color: var(--Blue);
+    border: 1px solid var(--Blue);
+   
+
+}
+
+button:hover{
+    background-color: hsl(228, 51%, 59%);
+    border: 1px solid hsl(228, 51%, 59%);
+}
+
+.illustration-container{
+    margin-top: 20px;
+}
+
+/******** FOOTER SECTION *********/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+footer .social-icon{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer .social-icon a{
+    margin-right: 20px;
+    background-color: var(--Pale-Bluee);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+footer p{
+    font-size: 16px;
+    padding-top: 10px;
+    color: var(--Very-Dark-Blue);
+}
+
+/*******  TABLET SCREEN *******/
+
+@media only screen and (min-width: 760px){
+
+    body{
+        padding-top: 40px;
+    }
+
+    #page{
+        padding: 10px 70px;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-container{
+        flex: 1;
+        margin-bottom: -50px;
+    }
+
+    .illustration-container{
+        margin-top: 0px;
+        /* margin-bottom: 1000px; */
+        flex: 1;
+    }
+   
+    form{
+        padding: 0px 80px;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        gap: 15px;
+    }
+   
+    label{
+        grid-row: 3;
+        margin-top: -70px;
+        text-align: left;
+        padding-left: 30px;
+    }
+
+    button{
+        margin-top: 0px;
+    }
+   
+} 
+
+/******* LARGE TABLET SCREEN *****/
+
+@media only screen and (min-width: 1020px){
+   
+}
+
+/******* DESKTOP SCREEN *********/
+
+@media only screen and (min-width: 1200px){
+   
+}
+
+/******* LARGE DESKTOP SCREEN ****/
+
+@media only screen and (min-width: 1500px){
+   
+}
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
